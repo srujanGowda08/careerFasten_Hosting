@@ -4,9 +4,11 @@
   "description": "Mini_project -6th sem",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "echo \"No build step required\""
   },
-  "author": "srujan,tarun,pavan,sushmitha",
+  "author": "srujan",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
