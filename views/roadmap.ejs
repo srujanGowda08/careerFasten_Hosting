@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerFasten</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--========== BOX ICONS ==========-->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="/css/home.css" />
+        <link rel="stylesheet" href="/css/roadmap.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+          <div class="header__container">
+            <div class="header__search">
+              <input type="text" value="<%=user.usn.toUpperCase()%>" id="usn" class="header__input user " readonly />
+            </div>
+            
+
+            <a href="/home" class="header__logo">CareerFasten</a>
+
+            <div class="header__search">
+              <input type="button" value="PlayGround" class="header__input"  id="playground" onclick="window.location.href='/playground'" />
+            
+            </div>
+
+            <div class="header__toggle">
+              <i class="bx bx-menu" id="header-toggle"></i>
+            </div>
+          </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+          <nav class="nav__container">
+            <div>
+              <a href="/home" class="nav__link nav__logo">
+                <i class="bx bxs-disc nav__icon"></i>
+                <span class="nav__logo-name">CareerFasten</span>
+              </a>
+
+              <div class="nav__list">
+                <div class="nav__items">
+                  <a href="/home" class="nav__link active">
+                    <i class="bx bx-home nav__icon"></i>
+                    <span class="nav__name">Home</span>
+                  </a>
+                  <a href="/roadmap" class="nav__link">
+                    <i class='bx bx-map nav__icon'></i>
+                    <span class="nav__name">RoadMap</span>
+                  </a>
+
+                
+
+                  <a href="/upcoming" class="nav__link">
+                    <i class='bx bx-repost nav__icon' ></i>
+                    <span class="nav__name">Upcoming_Updates</span>
+                  </a>
+                  <a href="/resources" class="nav__link">
+                    <i class='bx bx-note nav__icon'></i>
+                    <span class="nav__name">Resources</span>
+                  </a>
+                  <a href="/resumebuilder" class="nav__link">
+                    <i class='bx bxs-book-content nav__icon'></i>
+                    <span class="nav__name">Resume_Builder</span>
+                  </a>
+
+                  <a href="/discuss" class="nav__link">
+                    <i class="bx bx-message-rounded nav__icon"></i>
+
+                    <span class="nav__name">Discuss</span>
+                  </a>
+               
+            <a href="/logout" class="nav__link nav__logout">
+              <i class="bx bx-log-out nav__icon"></i>
+              <span class="nav__name">Log Out</span>
+            </a>
+          </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+          <div class="container mx-auto px-4 mt-10">
+              <div class="text-center mb-10">
+                  <h1 class="text-4xl font-bold mt-20">Campus Placements Prep for Beginners</h1>
+              </div>
+              <div class="flex flex-col items-center relative">
+                  <!-- Line connecting the roadmap items -->
+                  <div class="absolute h-full border-l-2 border-gray-300" style="left: 50%"></div>
+      
+                  <!-- Understanding the Process -->
+                  <div class="flex items-center w-full mb-12 relative">
+                      <div class="w-1/2 text-right pr-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Awareness About Campus Placement Process</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Pre-Placement Talk</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Written Test</div>
+                      </div>
+                      <div class="w-1/12 text-center flex justify-center items-center">
+                          <div class="bg-green-500 text-white p-2 rounded-full shadow-md inline-block">1</div>
+                      </div>
+                      <div class="w-1/2 pl-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Group Discussion</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Technical Interview</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">HR Interview</div>
+                      </div>
+                  </div>
+      
+                  <!-- Skill Assessment -->
+                  <div class="flex items-center w-full mb-12 relative">
+                      <div class="w-1/2 text-right pr-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Identifying Strengths and Weaknesses</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Technical Skills Needed</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Soft Skills Development</div>
+                      </div>
+                      <div class="w-1/12 text-center flex justify-center items-center">
+                          <div class="bg-green-500 text-white p-2 rounded-full shadow-md inline-block">2</div>
+                      </div>
+                      <div class="w-1/2 pl-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Aptitude Skills</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Leadership Qualities</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Communication Skills</div>
+                      </div>
+                  </div>
+      
+                  <!-- Resume Building -->
+                  <div class="flex items-center w-full mb-12 relative">
+                      <div class="w-1/2 text-right pr-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Basics of Resume Writing</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Layout and Formatting</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Highlighting Relevant Skills and Experiences</div>
+                      </div>
+                      <div class="w-1/12 text-center flex justify-center items-center">
+                          <div class="bg-green-500 text-white p-2 rounded-full shadow-md inline-block">3</div>
+                      </div>
+                      <div class="w-1/2 pl-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Resume Review and Feedback</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Cover Letter Writing</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Online Resume Builders and LinkedIn Profile</div>
+                      </div>
+                  </div>
+      
+                  <!-- Aptitude Tests -->
+                  <div class="flex items-center w-full mb-12 relative">
+                      <div class="w-1/2 text-right pr-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Quantitative Aptitude</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Logical Reasoning</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Verbal Ability</div>
+                      </div>
+                      <div class="w-1/12 text-center flex justify-center items-center">
+                          <div class="bg-green-500 text-white p-2 rounded-full shadow-md inline-block">4</div>
+                      </div>
+                      <div class="w-1/2 pl-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Data Interpretation</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Practice Tests</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Speed and Accuracy Building</div>
+                      </div>
+                  </div>
+      
+                  <!-- Technical Knowledge -->
+                  <div class="flex items-center w-full mb-12 relative">
+                      <div class="w-1/2 text-right pr-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Basics of Computer Science</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Programming Languages</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Data Structures and Algorithms</div>
+                      </div>
+                      <div class="w-1/12 text-center flex justify-center items-center">
+                          <div class="bg-green-500 text-white p-2 rounded-full shadow-md inline-block">5</div>
+                      </div>
+                      <div class="w-1/2 pl-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Software Development Principles</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Database Management</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Networking Basics</div>
+                      </div>
+                  </div>
+      
+                  <!-- Group Discussions -->
+                  <div class="flex items-center w-full mb-12 relative">
+                      <div class="w-1/2 text-right pr-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Understanding Group Discussion Basics</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Topic Awareness and Current Affairs</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Communication Skills</div>
+                      </div>
+                      <div class="w-1/12 text-center flex justify-center items-center">
+                          <div class="bg-green-500 text-white p-2 rounded-full shadow-md inline-block">6</div>
+                      </div>
+                      <div class="w-1/2 pl-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Leadership Skills</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Evaluation of Opponent's Views</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Constructive Arguments</div>
+                      </div>
+                  </div>
+      
+                  <!-- Interview Skills -->
+                  <div class="flex items-center w-full mb-12 relative">
+                      <div class="w-1/2 text-right pr-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Mastering Technical Interviews</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">HR Interview Techniques</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Mock Interviews</div>
+                      </div>
+                      <div class="w-1/12 text-center flex justify-center items-center">
+                          <div class="bg-green-500 text-white p-2 rounded-full shadow-md inline-block">7</div>
+                      </div>
+                      <div class="w-1/2 pl-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Common Interview Questions</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Building Confidence</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Post-Interview Etiquette</div>
+                      </div>
+                  </div>
+      
+                  <!-- Company Specific Preparation -->
+                  <div class="flex items-center w-full mb-12 relative">
+                      <div class="w-1/2 text-right pr-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Researching Companies</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Understanding Company Culture</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Identifying Key Skills and Requirements</div>
+                      </div>
+                      <div class="w-1/12 text-center flex justify-center items-center">
+                          <div class="bg-green-500 text-white p-2 rounded-full shadow-md inline-block">8</div>
+                      </div>
+                      <div class="w-1/2 pl-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Practicing Past Papers and Questions</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Networking with Alumni</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Understanding Job Roles and Growth Opportunities</div>
+                      </div>
+                  </div>
+      
+                  <!-- Final Tips -->
+                  <div class="flex items-center w-full mb-12 relative">
+                      <div class="w-1/2 text-right pr-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Time Management</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Stress Management</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Maintaining a Positive Attitude</div>
+                      </div>
+                      <div class="w-1/12 text-center flex justify-center items-center">
+                          <div class="bg-green-500 text-white p-2 rounded-full shadow-md inline-block">9</div>
+                      </div>
+                      <div class="w-1/2 pl-6">
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Seeking Feedback and Continuous Improvement</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Understanding Job Offers</div>
+                          <div class="bg-yellow-200 p-4 rounded-md shadow-md mb-4 inline-block">Preparing for the First Job</div>
+                      </div>
+                  </div>
+      
+              </div>
+          </div>
+      </main>
+      
+        
+
+    <footer class="footer mt-10 py-3 bg-light">
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-body" href="https:">careerfasten.com</a>
+      </div>
+    </footer>
+        </main>
+
+        <!--========== MAIN JS ==========-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/javascript/main.js"></script>
+
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 90px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+.resume-preview {
+  border: 1px solid #ddd;
+  padding: 20px;
+  height: 842px; /* A4 height in pixels */
+  width: 595px; /* A4 width in pixels */
+  overflow: auto;
+  background-color: #fff;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-preview h2,
+.resume-preview h4,
+.resume-preview h5 {
+  color: #009696;
+  margin-bottom: 10px;
+}
+
+.resume-preview p {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.resume-preview hr {
+  border: 1px solid #009696;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 870px) {
+  .resume-preview {
+    visibility: hidden;
+  }
+  .container {
+    padding: 5px;
+    width: 80%;
+  }
+}

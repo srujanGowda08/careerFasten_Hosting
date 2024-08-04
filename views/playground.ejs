@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerFasten</title>
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--========== TAILWIND CSS ==========-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/testimonials.css" />
+  </head>
+
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__search">
+          <input
+            type="button"
+            value="Home"
+            class="header__input bg-red-500"
+            id="playground"
+            onclick="window.location.href='/home'"
+          />
+        </div>
+        <a href="/home" class="header__logo">CareerFasten</a>
+        <div class="header__search">
+          <input
+            type="text"
+            value="<%=user.usn.toUpperCase()%>"
+            class="header__input user"
+            id="usn"
+            readonly
+          />
+        </div>
+        <div class="header__toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--========== MAIN CONTENT ==========-->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 mt-20">
+      <h2 class="text-3xl font-bold text-center mb-8">
+        Foundations of programming
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Practice C++ Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2 flex items-center">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/c-plus-plus-logo.png"
+                alt="C++ Logo"
+                class="w-8 h-8 mr-2"
+              />
+              Practice C++
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Solve C++ Practice problems online with the Practice C++ path on
+              CodeChef. Write code for over 20...
+            </p>
+            <div class="flex items-center">
+              <svg
+                class="w-5 h-5 text-indigo-500 mr-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                />
+              </svg>
+              <span class="text-sm text-gray-600">202 Problems</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+            <a
+              href="https://www.codechef.com/learn/cpp"
+              class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+            >
+              Learn
+            </a>
+          </div>
+        </div>
+
+        <!-- Practice Python Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2 flex items-center">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/python.png"
+                alt="Python Logo"
+                class="w-8 h-8 mr-2"
+              />
+              Practice Python
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Solve Python coding problems online with Practice Python on
+              CodeChef. Write code for over 19...
+            </p>
+            <div class="flex items-center">
+              <svg
+                class="w-5 h-5 text-indigo-500 mr-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                />
+              </svg>
+              <span class="text-sm text-gray-600">195 Problems</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+            <a
+              href="https://www.codechef.com/learn/python"
+              class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+            >
+              Learn
+            </a>
+          </div>
+        </div>
+
+        <!-- Practice Java Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2 flex items-center">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/java-coffee-cup-logo.png"
+                alt="Java Logo"
+                class="w-8 h-8 mr-2"
+              />
+              Practice Java
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Complete your Java coding practice with our online Java practice
+              course on CodeChef. Solve over...
+            </p>
+            <div class="flex items-center">
+              <svg
+                class="w-5 h-5 text-indigo-500 mr-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                />
+              </svg>
+              <span class="text-sm text-gray-600">156 Problems</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+            <a
+              href="https://www.codechef.com/learn/java"
+              class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+            >
+              Learn
+            </a>
+          </div>
+        </div>
+
+        <!-- Practice Go Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2 flex items-center">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/golang.png"
+                alt="Go Logo"
+                class="w-8 h-8 mr-2"
+              />
+              Practice Go
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Learn the basics of Go programming language with practical
+              problems and challenges...
+            </p>
+            <div class="flex items-center">
+              <svg
+                class="w-5 h-5 text-indigo-500 mr-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                />
+              </svg>
+              <span class="text-sm text-gray-600">150 Problems</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+            <a
+              href="https://www.codechef.com/learn/Go"
+              class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+            >
+              Learn
+            </a>
+          </div>
+        </div>
+
+        <!-- Practice C# Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2 flex items-center">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/c-sharp-logo.png"
+                alt="C# Logo"
+                class="w-8 h-8 mr-2"
+              />
+              Practice C#
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Learn the basics of C# with a range of practical problems and
+              exercises...
+            </p>
+            <div class="flex items-center">
+              <svg
+                class="w-5 h-5 text-indigo-500 mr-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                />
+              </svg>
+              <span class="text-sm text-gray-600">130 Problems</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+            <a
+              href="https://www.codechef.com/learn/c-sharp "
+              class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+            >
+              Learn
+            </a>
+          </div>
+        </div>
+
+        <!-- Practice JavaScript Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2 flex items-center">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/javascript.png"
+                alt="JavaScript Logo"
+                class="w-8 h-8 mr-2"
+              />
+              Practice JavaScript
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Practice JavaScript online with our platform and solve challenging
+              coding problems...
+            </p>
+            <div class="flex items-center">
+              <svg
+                class="w-5 h-5 text-indigo-500 mr-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                />
+              </svg>
+              <span class="text-sm text-gray-600">200 Problems</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+            <a
+              href="https://www.codechef.com/learn/javascript"
+              class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+            >
+              Learn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beginner DSA Section -->
+    <section class="bg-gray-50 py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Beginner DSA</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Practice Strings Card -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Practice Strings</h3>
+              <p class="text-gray-700 mb-4">
+                Practice String problems in C, C++, Python, Java and 10+ other
+                languages. Solve these questions...
+              </p>
+              <div class="flex items-center">
+                <svg
+                  class="w-5 h-5 text-indigo-500 mr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                  />
+                </svg>
+                <span class="text-sm text-gray-600">22 Problems</span>
+              </div>
+              <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+              <a
+                href="https://www.codechef.com/practice/strings"
+                class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+              >
+                Practice
+              </a>
+            </div>
+          </div>
+
+          <!-- Practice Arrays Card -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Practice Arrays</h3>
+              <p class="text-gray-700 mb-4">
+                Solve Arrays coding problems to start learning data structures
+                and algorithms. This curated set of 23...
+              </p>
+              <div class="flex items-center">
+                <svg
+                  class="w-5 h-5 text-indigo-500 mr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                  />
+                </svg>
+                <span class="text-sm text-gray-600">21 Problems</span>
+              </div>
+              <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+              <a
+                href="https://www.codechef.com/practice/Arrays"
+                class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+              >
+                Practice
+              </a>
+            </div>
+          </div>
+
+          <!-- Practice Basic Math Card -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Practice Basic Math</h3>
+              <p class="text-gray-700 mb-4">
+                Basic Math includes problems on topics like arithmetic,
+                sequences, and counting, which are...
+              </p>
+              <div class="flex items-center">
+                <svg
+                  class="w-5 h-5 text-indigo-500 mr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                  />
+                </svg>
+                <span class="text-sm text-gray-600">23 Problems</span>
+              </div>
+              <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+              <a
+                href="https://www.codechef.com/practice/basic-math"
+                class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+              >
+                Practice
+              </a>
+            </div>
+          </div>
+
+          <!-- Practice Sorting Card -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Practice Sorting</h3>
+              <p class="text-gray-700 mb-4">
+                Sorting refers to arranging data in a particular format
+                (ascending, descending). Sorting improves...
+              </p>
+              <div class="flex items-center">
+                <svg
+                  class="w-5 h-5 text-indigo-500 mr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-5 10h6m0 0v5m0-5l2-2m0 0L13 5m5 8H5"
+                  />
+                </svg>
+                <span class="text-sm text-gray-600">15 Problems</span>
+              </div>
+              <p class="text-sm text-gray-600 mt-1">Beginner level</p>
+              <a
+                href="https://www.codechef.com/practice/sorting"
+                class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded hover:bg-indigo-600 transition duration-300"
+              >
+                Practice
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--========== FOOTER ==========-->
+    <footer class="footer mt-10 py-3 bg-light">
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-body" href="https://careerfasten.com"
+          >careerfasten.com</a
+        >
+      </div>
+    </footer>
+
+    <!--========== MAIN JS ==========-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/javascript/home.js"></script>
+    <script src="/javascript/testimonial.js"></script>
+  </body>
+</html>
