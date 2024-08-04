@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "build": "echo \"No build step required\""
   },
-  "author": "srujan",
+  "author": "Srujan G.S",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
